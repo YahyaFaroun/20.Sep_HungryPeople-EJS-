@@ -1,0 +1,36 @@
+<%- include ('./partials/head') %>
+
+<body>
+    <%- include ('./partials/nav') %>
+    <main id="mainMenu">
+        <section class="mainFlexText">
+            <h2>DELICIOUS MENU</h2>
+            <img src="img/line.svg" alt="">
+            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor
+                magna.</h5>
+        </section>
+        <section id="activeMenus">
+            <a class="<%= activeMenu == '/menu/soup' ? 'active' : '' %>" href="/menu/soup">Soup</a>
+            <a class="<%= activeMenu == '/menu/pizza' ? 'active' : '' %>" href="/menu/pizza">Pizza</a>
+            <a class="<%= activeMenu == '/menu/pasta' ? 'active' : '' %>" href="/menu/pasta">Pasta</a>
+            <a class="<%= activeMenu == '/menu/salad' ? 'active' : '' %>" href="/menu/salad">Salad</a>
+            <a class="<%= activeMenu == '/menu/dessert' ? 'active' : '' %>" href="/menu/dessert">Dessert</a>
+            <a class="<%= activeMenu == '/menu/drinks' ? 'active' : '' %>" href="/menu/drinks">Drinks</a>
+        </section>
+        <section id="menuOutput" id="hide">
+            <% menu.forEach(elt=> { %>
+            <article>
+                <div>
+                    <h4><%= elt.article %></h4>
+                    <h4><%= elt.price %></h4>
+                </div>
+                <p><%= elt.description %></p>
+            </article>
+            <% }) %>
+        </section>
+    </main>
+    <%- include ('./partials/footer') %>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

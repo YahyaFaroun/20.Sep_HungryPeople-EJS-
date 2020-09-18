@@ -1,0 +1,26 @@
+<%- include ('./partials/head') %>
+<body>
+    <%- include ('./partials/nav') %>
+    <main id="mainContact">
+        <section class="mainFlexText">
+            <h2>CONTACT</h2>
+            <img src="img/line.svg" alt="" class="line">
+            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</h5>
+        </section>
+        <form action="/new" method="POST">
+            <article>
+                <input class="inputBox" type="text" name="name" id="" placeholder="Name">
+                <input class="inputBox" type="email" name="email" id="" placeholder="Email">
+                <input class="inputBox" type="number" name="number" id="" placeholder="Phone">
+                <textarea class="inputBox" name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            </article>
+            <article>
+                <div><img src="img/contact.svg" alt=""></div>
+                <div><input class="btnWide" type="submit" value="SEND MESSAGE"></div>
+            </article>
+        </form>
+        <img src="img/map.jpg" alt="">
+    </main>
+    <%- include ('./partials/footer') %>
+</body>
+</html>

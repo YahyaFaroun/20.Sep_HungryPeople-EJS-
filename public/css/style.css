@@ -1,0 +1,314 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h2{
+    font-family: 'Banny';
+    font-size: 2em;
+}
+h4{
+    font-family: 'Banny';
+    color: #ffffff;
+    font-size: 1.4em;
+    font-weight: normal;
+}
+h5{
+    font-size: 1em;
+    line-height: 20px;
+}
+h6{
+    color: white;
+    letter-spacing: 7px;
+    text-align: center;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.line{
+    width: 100px;
+    color: #E8C300;
+    margin: 0 auto;
+    height: 7px;
+}
+.frameRight{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 23%;
+    left: 65%;
+
+    border: 20px solid #E8C300;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
+    border-radius: 5px;
+}
+.frameLeft{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 23%;
+    right: 65%;
+
+    border: 20px solid #E8C300;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
+    border-radius: 5px;
+}
+.img{
+    width: 475px;
+}
+.booking{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bookingText{
+    font-size: .8em;
+    color: rgba(51, 51, 51, 0.5);
+}
+.btS{
+    font-weight: bold;
+    color: rgba(51, 51, 51, 0.5);
+}
+.btn{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+    /* or 167% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+    background-color: #E8C300;
+    border-radius: 5px;
+}
+.btnWide{
+    font-family: Open Sans;
+    font-weight: bold;
+    height: 60px;
+    color: #FFFFFF;
+    background-color: #E8C300;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+}
+.inputBox{
+    font-family: Open Sans;
+    height: 35px;
+    padding: 5px 0;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: rgba(51, 51, 51, 0.5);
+    background-color: #E5E5E5;
+    font-size: 14px;
+    text-indent: 20px;
+    margin-bottom: 10px;
+}
+
+
+.mainFlex{
+    display: flex;
+    margin: 0 5%;
+}
+.mainFlexFrame{
+    position: relative;
+    margin: auto 5%;
+    width: 100%;
+}
+.mainFlexText{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mainFlexText h5{
+    margin: 20px auto 20px;
+}
+.mainFlexText p{
+    font-size: .8em;
+    line-height: 25px;
+}
+.mainFlexText img{
+    margin-top: 20px;
+}
+
+
+/*Team*/
+#mainTeam{
+    background-image: url(/img/team.jpg);
+}
+#mainTeam h6{
+    padding-top: 5vh;
+    margin-bottom: -5vh;
+}
+#mainTeam{
+    color: #ffffff;
+}
+
+
+/*Booking*/
+#mainBooking section article{
+    width: 100%;
+}
+#mainBooking img{
+    margin: 10px auto;
+}
+#mainBooking section article:first-of-type{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#mainBooking form article{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#mainBooking select{
+    height: 45px;
+    margin: 0;
+    padding: 0;
+    line-height: 50px;
+    
+}
+
+
+/*  Aktives Menu mit underline*/
+#activeMenus a:focus{
+    text-decoration: underline;
+    border-bottom: 1px solid red;
+}
+
+
+/*Menu*/
+#mainMenu{
+    margin: 10vh 5%;
+}
+#mainMenu section:nth-of-type(2){
+    display: flex;
+    justify-content: center;
+ 
+}
+#mainMenu section:nth-of-type(2) a{
+    font-family: Open Sans;
+    text-decoration: none;
+    color: #333333;
+    padding: 0px 20px;
+    font-size: 12px;
+    line-height: 18px;
+}
+#mainMenu section:nth-of-type(2) a:not(:last-of-type){
+    border-right: 1px solid #333333;
+}
+#menuOutput{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 60px;
+    margin: 10vh 0 ;
+}
+#menuOutput article div{
+    display: flex;
+    justify-content: space-between;
+}
+#menuOutput h4{
+    font-size: 1.1em;
+    color: #333333;
+    font-weight: bold;
+}
+#menuOutput p{
+    color: #333333;
+    font-size: .7em;
+    font-weight: lighter;
+}
+
+/*Event*/
+#mainEvents{
+    background-image: url(/img/events.jpg);
+}
+#mainEvents h6{
+    padding: 5vh 0 5vh;
+}
+#mainEvents section article{
+    position: relative;
+}
+.EventBox{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    height: 475px;
+    width: 80px;
+    top: 0;
+    background-color: #000000;
+}
+#EventBoxLeft{
+    right: 0;
+}
+#EventBoxLeft h4{
+    writing-mode: vertical-lr;
+}
+#EventBoxRight{
+    left: 0;
+}
+#EventBoxRight h4{
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+
+   
+/*Contact*/
+#mainContact{
+    margin: 10vh 5% 0vh;
+    padding-top: 5vh;
+}
+#mainContact h5{
+    width: 50%;
+}
+#mainContact form article{
+    display: flex;
+    flex-direction: column;
+}
+#mainContact form article:last-of-type{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+#mainContact form article:last-of-type div{
+    margin: 10px 0;
+}
+#mainContact form article:last-of-type div:first-of-type{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#mainContact > img{
+    width: 100%;
+    margin-top: 10vh;
+}
+#mainContact textarea{
+    height: 120px;
+    background: #E5E5E5;
+    border-radius: 5px;
+}
+
+
+
+
+/*Error*/
+#error404{
+    width: 100%;
+    margin: 10vh auto;
+    text-align: center;
+}
+
+
+

@@ -1,0 +1,48 @@
+<%- include ('./partials/head') %>
+<body>
+    <%- include ('./partials/nav') %>
+    <main id="mainBooking">
+        <section class="mainFlex">
+            <article>
+                <h2>BOOK A TABLE</h2>
+                <img src="img/line.svg" alt="" class="line">
+                <form action="">
+                    <article>
+                        <input class="inputBox" type="text" name="" placeholder="Name">
+                        <input class="inputBox" type="email" name="" placeholder="Email">
+                    </article>
+                    <article>
+                        <input class="inputBox" type="text" name="" placeholder="Phone">
+                        <select class="inputBox" name="People" id="people">
+                            <option value="">People</option>
+                            <option value="">Miriam</option>
+                            <option value="">Michael</option>
+                            <option value="">Noah</option>
+                        </select>
+                    </article>
+                    <article>
+                        <input class="inputBox" type="date" name="" placeholder="Date">
+                        <select class="inputBox" name="here">
+                            <option value="">Time</option>
+                            <option value="">11:00</option>
+                            <option value="">13:00</option>
+                            <option value="">15:00</option>
+                            <option value="">17:00</option>
+                            <option value="">19:00</option>
+                        </select>
+                    </article>
+                    <input class="btnWide" type="button" value="BOOK NOW">
+                </form>
+            </article>
+            <article class="mainFlexFrame">
+                <img class="img" src="img/clock.jpg" alt="">
+                <div class="frameRight"></div>
+            </article>
+        </section>
+        <section class="booking">
+            <p class="bookingText">Mon - Fri: <span class="btS">8PM - 10PM</span>, Sat - Sun: <span class="btS">8PM - 3AM</span>, Phone:<span class="btS">+40 729 131 637/+40 726 458 782</span></p>
+        </section>
+    </main>
+    <%- include ('./partials/footer') %>
+</body>
+</html>
